@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="d-flex justify-content-center align-items-center flex-column">
+    <HeaderAll />
+    <div>
+      
+    </div>
+    <router-view />
+    <FooterAll />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderAll from './components/HeaderAll.vue';
+import FooterAll from './components/FooterAll.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderAll,
+    FooterAll
+}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+
 </style>
