@@ -9,7 +9,7 @@
       container-fluid
     "
   >
-    <div class="container-fluid">
+    <div class="container-fluid container-slider">
       <img src="/image/main-background.png" alt="Никольский Молл" />
     </div>
     <div
@@ -43,10 +43,15 @@ h6 {
 
 .main-slider {
   position: relative;
+  padding: 0;
 }
 
 img {
   width: 100vw;
+}
+
+.container-slider {
+  padding: 0;
 }
 
 .sliders-groop {
@@ -101,5 +106,43 @@ img {
     top: -8px;
     left: -8px;
   }
+}
+
+@media (max-width: 360px) { 
+  .sliders-groop {
+    width: 59px;
+    height: 12px;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .slide1 {
+    width: 5px;
+    height: 5px;
+  }
+  .slide2 {
+    @extend .slide1;
+  }
+  .slide3 {
+    @extend .slide1;
+  }
+  .slide4 {
+    @extend .slide1;
+  }
+
+  .active {
+  width: 2px;
+  height: 2px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+  }
+}
 }
 </style>

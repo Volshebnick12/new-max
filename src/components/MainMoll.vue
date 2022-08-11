@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center flex-column container-fluid">
+  <div class="d-flex justify-content-center align-items-center flex-column container-fluid main">
     <MainSlider />
     <MainCatalogMagazin />
     <NewsStock />
@@ -18,4 +18,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+
+.main {
+  padding: 0;
+}
+
+</style>

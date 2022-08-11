@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style leng="scss" scoped>
+<style lang="scss" scoped>
 .cards-catalog {
   max-width: 1140px;
   height: 100%;
@@ -43,7 +43,7 @@ export default {
 }
 
 .text-magazin {
-  padding-top: 20px;
+  padding: 20px 0 54px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -57,18 +57,30 @@ export default {
 
 .link-magazin {
   color: #33348e;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #0e1085;
+  }
 }
 
-.link-magazin:hover {
-  opacity: 0.7;
-  transition: 0.5s;
-  text-decoration: none;
-}
+@media (max-width: 360px) {
+  .cards-catalog {
+    height: 100%;
+    gap: 18px;
+    padding: 35px 16px 28px;
+  }
 
-.link-magazin:active {
-  opacity: 0.7;
-  transition: 0.5s;
-  text-decoration: none;
-  color: #0e1085;
+  .text-magazin {
+    font-size: 14px;
+    padding: 3px 0 28px;
+  }
 }
 </style>

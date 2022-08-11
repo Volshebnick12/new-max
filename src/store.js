@@ -295,7 +295,32 @@ const store = createStore({
           index: '40'
         },
       ],
-      
+      stocks: [
+        {
+          image: 'image/uniqlo.png',
+          name: 'Uniclo',
+          sale: '10',
+          index: '1'
+        },
+        {
+          image: 'image/massimodutti.png',
+          name: 'Massimo Dutti',
+          sale: '5',
+          index: '2'
+        },
+        {
+          image: 'image/moscowjewelryfactory.png',
+          name: 'Moscow Jewelry Factory',
+          sale: '20',
+          index: '3'
+        },
+        {
+          image: 'image/yvesrocher.png',
+          name: 'Yves Rocher',
+          sale: '10',
+          index: '4'
+        },
+      ]
     }
   }
 })

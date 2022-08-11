@@ -1,7 +1,7 @@
 <template>
   <div class="container header">
     <div class="nav justify-content-between header-up">
-      <ul class="nav-item nav justify-content-center">
+      <ul class="nav-item nav justify-content-center mobile">
         <li class="nav-item-link nav-item list-item-left">
           <a href="#">
             <svg
@@ -55,16 +55,22 @@
         </li>
       </ul>
       <div class="nav-item">
-        <router-link class="link-home" to="/"
-          ><img
+        <router-link class="link-home" to="/">
+          <img
+            class="mobile"
             src="./icons/logo-mini.svg"
             width="326"
             height="47"
+            alt="Логотип компании" /><img
+            class="logo-mobile"
+            src="./icons/logo-mini.svg"
+            width="158"
+            height="23"
             alt="Логотип компании"
         /></router-link>
         <h2 class="visually-hidden">Никольский молл</h2>
       </div>
-      <ul class="nav nav-item justify-content-center">
+      <ul class="nav nav-item justify-content-center mobile">
         <li class="nav-item-link nav-item list-item-right">
           <a href="#">
             <svg
@@ -100,7 +106,7 @@
           </a>
         </li>
         <li class="nav-item-link nav-item list-item-right">
-          <a href="tel:+78125577668">
+          <a href="tel:+73435375999">
             <svg
               width="18"
               height="18"
@@ -118,7 +124,7 @@
         </li>
       </ul>
     </div>
-    <div class="nav navigation__down justify-content-between list-down">
+    <div class="nav navigation__down justify-content-between list-down mobile">
       <div class="nav nav-item navigation__down-nav justify-content-around">
         <router-link
           class="nav-item list-item-down list-down-item"
@@ -173,16 +179,15 @@ h6 {
 .header-up {
   display: flex;
   align-items: center;
-}
-
-.header-up::before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 1140px;
-  left: 0%;
-  top: 85px;
-  background-color: #323232;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 1140px;
+    left: 0%;
+    top: 85px;
+    background-color: #323232;
+  }
 }
 
 .visually-hidden {
@@ -204,12 +209,9 @@ h6 {
   }
 }
 
-.list-item-left {
-  padding-right: 44px;
-}
-
+.list-item-left,
 .list-item-right {
-  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .link-home:hover {
@@ -264,5 +266,19 @@ h6 {
 
 .list-item-color {
   color: #f26a3d;
+}
+
+@media (max-width: 360px) {
+  .mobile {
+    display: none;
+  }
+
+  .header {
+    margin: 24px auto 25px 17px;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
 }
 </style>

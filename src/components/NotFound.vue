@@ -32,6 +32,7 @@ img {
   font-weight: 500;
   font-size: 25px;
   line-height: 15px;
+  margin-bottom: 60px;
 }
 
 .link {
