@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <h1 class="title">Магазины</h1>
     <div class="bread-crumbs">
       <router-link class="bread-crumbs-link" to="/">Главная</router-link>
@@ -222,7 +222,7 @@ h6 {
   appearance: none;
   cursor: pointer;
   &:hover {
-    background:#e7f3f3 url(./icons/searchinput.svg) no-repeat;
+    background: #e7f3f3 url(./icons/searchinput.svg) no-repeat;
     background-position: right 16px center;
     transition: 0.5s;
   }
@@ -241,7 +241,7 @@ h6 {
   appearance: none;
   cursor: pointer;
   &:hover {
-    background:#e7f3f3 url(./icons/arrowdown.svg) no-repeat;
+    background: #e7f3f3 url(./icons/arrowdown.svg) no-repeat;
     background-position: right 16px center;
     transition: 0.5s;
   }
@@ -273,6 +273,53 @@ h6 {
 .view-link-active {
   background-color: #1da39f;
   outline: 1px solid #ffffff;
+}
 
+@media (max-width: 360px) {
+  .title {
+    font-size: 20px;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .bread-crumbs {
+    margin-bottom: 15px;
+    text-align: center;
+    padding-right: 190px;
+  }
+
+  .cards-catalog {
+    gap: 18px;
+    padding: 30px 15px;
+    margin-bottom: 0;
+  }
+
+  .wraper-search {
+    flex-wrap: wrap;
+    max-width: 340px;
+    height: 190px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .list-search {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .search,
+  .filter {
+    margin: 5px 0 5px 30px ;
+    padding-right: 80px;
+  }
+
+  .search-input {
+    padding-right: 115px;
+  }
+
+  .list-view {
+    margin: 0 auto;
+
+  }
 }
 </style>

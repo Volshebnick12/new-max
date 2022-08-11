@@ -209,6 +209,10 @@ h6 {
   }
 }
 
+.logo-mobile {
+  display: none;
+}
+
 .list-item-left,
 .list-item-right {
   padding-right: 44px;

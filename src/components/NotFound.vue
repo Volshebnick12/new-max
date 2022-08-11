@@ -37,12 +37,19 @@ img {
 
 .link {
   @extend .text;
-  color: #8557A4;
+  color: #8557a4;
 
   &:hover {
     opacity: 0.7;
     transition: all 0.3s;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .text {
+    font-size: 16px;
+    margin: 0 0 15px 10px;
   }
 }
 </style>

@@ -330,12 +330,16 @@ h6 {
   padding-left: 45px;
 }
 
-.contact,
-.contact-subscribe {
+.contact {
   list-style-type: none;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+.contact-subscribe {
+  list-style-type: none;
+  padding: 0;
 }
 
 .phone {
