@@ -1,3 +1,5 @@
+Проект можно посмотреть здесь: [https://magazin-cart.netlify.app](https://site-nikolsky-mall.netlify.app/#/)
+
 # new-max
 
 ## Project setup
